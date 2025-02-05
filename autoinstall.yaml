@@ -2,23 +2,24 @@
 autoinstall:
     version: 1
     identity:
-        realname: 'Dionatan Simioni'
+        realname: 'Leonardo Carrera'
         hostname: ubuntu-desktop
-        username: diolinux
+        username: leoccbr
         password: '$y$j9T$uhkxlm8nUQaNu.6rl4k2d.$DIldpYy96OHg8lFjfXfc671BZcGWkPOmaDONGAhGSg3'
     locale: pt_BR.utf8
     keyboard:
         layout: br
     timezone: "America/Sao_Paulo"   
     packages:
-        - libreoffice
-        - gimp
         - git
         - wget
-    snaps:
-        - name: spotify
-          channel: stable
-          classic: false
+        - flatpak
+        - brew
+        - nodejs
+        - vscode
+        - gnome-software-plugin-flatpak
+    late-commands:
+        - flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
     codecs:
         install: true
     drivers:
