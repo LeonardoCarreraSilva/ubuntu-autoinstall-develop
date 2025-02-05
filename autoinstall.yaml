@@ -13,13 +13,9 @@ autoinstall:
     packages:
         - git
         - wget
-        - flatpak
         - brew
         - nodejs
         - vscode
-        - gnome-software-plugin-flatpak
-    late-commands:
-        - flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
     codecs:
         install: true
     drivers:
